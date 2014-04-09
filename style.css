@@ -195,7 +195,7 @@ header {
 }
 
 header#left {
-	width: 220px;
+	width: 240px;
 	float: left;
 	margin-top: 90px;
 	-webkit-animation-name: headerleftAnim;
@@ -283,7 +283,7 @@ a.buttonOutline {
 	height: 54px;
 	width: 100px;
 	font-family: 'GothamRnd-Book';
-	margin-left: 9px;
+	margin: 10px;
 	-o-transition:color .2s ease-out, background 0.1s ease-in;
 	-ms-transition:color .2s ease-out, background 0.1s ease-in;
 	-moz-transition:color .2s ease-out, background 0.1s ease-in;
@@ -292,20 +292,33 @@ a.buttonOutline {
 }
 
 a.buttonOutline:hover {
+	margin-left: 10px;
 	color: #00aeef;
 	background: #fff;
 }
 
 a.buttonOutline:active {
-	padding: 15px;
-	margin-left: 1px;
 }
 
-a.snippet {
+.snippet {
 	color: #fff;
-	margin: 25px 0 0 37px;
+	margin: 35px 0 0 0px;
+	text-align: center;
 	font-size: 13px;
 	opacity: 0.75;
+}
+
+.snippet a:link,
+.snippet a:visited,
+.snippet a:active {
+	color: #fff;
+	font-size: 13px;
+	text-decoration: underline;
+}
+
+.snippet a:hover {
+	opacity: 1;
+	text-decoration: none;
 }
 
 header#right {
